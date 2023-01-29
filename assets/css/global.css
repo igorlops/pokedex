@@ -4,11 +4,12 @@
 
 }
 body{
-    background-color: rgb(236, 236, 236);
-}
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-attachment: fixed;
+    }
 .content{
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgba(219, 219, 219, 0.5);
     height: auto;
     width: 100vw;
 }
