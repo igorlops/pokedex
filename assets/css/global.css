@@ -4,11 +4,13 @@
 
 }
 body{
-    background-color: rgb(236, 236, 236);
-}
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-attachment: fixed;
+    
+    }
 .content{
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgba(219, 219, 219, 0.5);
     height: auto;
     width: 100vw;
 }
@@ -44,15 +46,46 @@ body{
     width: 100%;
     padding: 1rem;
 }
-button#loadMoreButton{
+#loadMoreButton {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 1.2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  #loadMoreButton:hover, .btn:focus {
     color: #fff;
-    background-color: #6c79db;
-    border: none;
-    font-size: .825rem;
-    border-radius: .625rem;
-    padding: 0.25rem .5rem;
-    margin: .25rem 0;
-}
+    outline: 0;
+  }
+  
+  .first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
 @media screen and (max-width:450px){
     .content .header img.pokebola{
         display: none;
