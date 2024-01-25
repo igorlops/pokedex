@@ -35,6 +35,11 @@
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    cursor: pointer;
+}
+.pokemon:hover{
+    transition: .5s;
+    scale: 1.05;
 }
 
 .pokemon .number{
@@ -58,7 +63,7 @@
 .pokemon .types{
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style-type: none;
 }
 .type{
     color: #fff;
@@ -71,6 +76,47 @@
 .pokemon .detail img{
 max-width: 100%;
 height: 70px;
+}
+
+.tipos-pokemon-single ul li{
+    list-style-type: none;
+    width: 100%;
+}
+
+.imagem-pokemon-single{
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.progress-abilities{
+    padding: 15px;
+    overflow: hidden;
+}
+
+
+/* Estilos progress de habilidades */
+
+/* Estilo para a parte não preenchida da barra de progresso */
+.progress-abilities::-webkit-progress-bar {
+    background-color: #8a1616;
+    border-radius: 10px;
+}
+
+.progress-abilities::-moz-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+/* Estilo para a parte preenchida da barra de progresso */
+.progress-abilities::-webkit-progress-value {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+/* Estilo para a parte preenchida da barra de progresso no Firefox */
+.progress-abilities::-moz-progress-value {
+    background-color: #4CAF50;
+    border-radius: 10px;
 }
 
 @media screen and (min-width: 390px){
